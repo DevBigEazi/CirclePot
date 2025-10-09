@@ -1,14 +1,14 @@
+```mermaid
 flowchart TD
     subgraph A [1. ONBOARDING & FUNDING]
         direction TB
-        A1([Start]) --> A2[Sign Up<br>60s - Email/Google/Passkey]
+        A1[Start] --> A2[Sign Up<br>60s - Email/Google/Passkey]
         A2 --> A3[Thirdweb Creates<br>Smart Contract Wallet]
         A3 --> A4[Add Funds cUSD]
         
         subgraph A4_Sub [Funding Methods]
-            A4_1[💳 Buy with Card]
-            A4_2[🏦 Celo Partner On-Ramp]
-            A4_3[🔄 Crypto Exchange]
+            A4_1[🏦 Celo Partner On-Ramp]
+            A4_2[🔄 Crypto Exchange]
         end
         
         A4 --> A4_Sub
@@ -49,7 +49,7 @@ flowchart TD
         E1 -- Yes --> E2[Receive Payout<br>Pot - 0.2% Fee]
         E2 --> E3[💰 Instant cUSD to Wallet]
         E3 --> E4[Certification +6 Rep Points]
-        E4 --> E5([Circle Completed])
+        E4 --> E5[Circle Completed]
         E1 -- No --> D1
     end
 
@@ -63,7 +63,7 @@ flowchart TD
         F5 -- Yes --> F6[Apply Penalty Fee<br>0.1% - 1.0% on saved amount]
         F6 --> F7[Remaining Funds to Wallet]
         F4 -- Yes --> F8[Full Payout Received<br>+3 Rep Points]
-        F8 --> F9([Goal Achieved!])
+        F8 --> F9[Goal Achieved!]
     end
 
     subgraph G [KEY FEATURES & INFRASTRUCTURE]
@@ -85,3 +85,4 @@ flowchart TD
     class C,D,E primaryJourney
     class F goalJourney
     class G infrastructure
+```
